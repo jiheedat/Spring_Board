@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+.hide {display=none;}
+
+.alert {
+	margin-top:5px;
+    padding: 5px;
+    margin-bottom: 6px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-size: 9px;
+    text-align: center;
+}
+
+.overlab {
+	font-size: 10px;
+    font-weight: 600;
+    text-align: center;
+    display: block;
+}
+
+#idError {
+    text-align: center;
+    font-weight: 600;
+    font-size: 10px;
+    display: block;
+} 
+
+input[type=file]::file-selector-button{
+	border-color: #2e6da4; */
+	border: 1px solid #bfbfbf;
+	background: #fff;
+	margin-top:5px;
+}
+
+#modification { text-align: center;}
+#email { text-align: center;}
+#profil {
+	file-color:blue;
+	margin-bottom:15px;
+}

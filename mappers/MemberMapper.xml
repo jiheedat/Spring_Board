@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="memberMapper">
+	<select id="selectPw" resultType="java.lang.String">
+		SELECT pw FROM member WHERE id=#{id}
+	</select>
+	
+	<select id="selectName" resultType="java.lang.String">
+		SELECT name FROM member WHERE id=#{id}
+	</select>
+	
+	<insert id="join">
+		INSERT INTO member(id,pw,name,email,profil)
+		VALUES(#{id},#{pw},#{name},#{email},#{profil})
+	</insert>
+	
+	<select id="checkId" resultType="java.lang.String">
+		SELECT id FROM member WHERE id=#{id}
+	</select>
+	
+	<select id="memberDto" resultType="com.jh.dto.MemberDto">
+		SELECT * FROM member WHERE id=#{id}
+	</select>
+	
+	<update id="unregister">
+		UPDATE member
+		SET status ='N'
+		WHERE id=#{id}
+	</update>
+	
+	<update id="modification">
+		UPDATE member SET pw=#{pw},name=#{name},email=#{email},profil=#{profil} WHERE id=#{id}
+	</update>
+</mapper>

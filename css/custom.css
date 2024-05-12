@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: "Playfair Display";
+	src: url("font/PlayfairDisplay-Regular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+	.font{
+		font-family: gothamL, notokrL, Playfair Display;
+	}
+	
+	.btn-primary{
+	background-color:#95af8a;
+	border: none;
+	font-family: gothamL, notokrL, Playfair Display;
+	}
+	
+	.btn-primary:hover{
+	background-color: #7f9479;
+	border: 1px solid #eee;
+	font-family: gothamL, notokrL, Playfair Display;
+	}
+	
+	.btn.active, .btn-group-vertical > .btn.active{
+	background-color: #eee;
+	border: 1px solid #eee;
+	font-family: gothamL, notokrL, Playfair Display;
+	}
+	
+	.btn.active, .btn-group-vertical > .btn.active:hover{
+	background-color: #7f9479;
+	border: 1px solid #eee;
+	font-family: gothamL, notokrL, Playfair Display;
+	}
+	
+	.btn-success{
+	background-color: #9db895;
+	border: 1px solid #eee;
+	font-family: gothamL, notokrL, Playfair Display;
+	}
+	.btn-success:hover{
+	background-color: #7f9479;
+	border: 1px solid #eee;
+	font-family: gothamL, notokrL, Playfair Display;
+	}
+
+	
+	
+	
+	*{
+	margin: 0;
+	padding: 0;
+	}
+	
+	.background-img{
+	background-image: url('beach.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+	}
+	
+	.blue{
+	background-color: #b4e2c0;
+	}
+	
+	.table table-striped{
+	background-color: #b4e2c0;
+	}
+	
+	th{
+		font-family: gothamL, notokrL, Playfair Display;
+	}
+
+	

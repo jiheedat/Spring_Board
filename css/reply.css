@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+
+
+.fl { float:left ;}
+.fr { float:right;}
+.clear { clear:both;}
+#reply {
+	width:750px;
+	height:auto;
+	margin:0 auto;
+	margin-top:50px;
+}
+
+#replybox {
+	margin-right: 0;
+    padding: 13px 14px 10px;
+    border-radius: inherit;
+    height: 70px;
+}
+
+
+textarea::placeholder {
+  	top: 13px;
+    line-height: 20px;
+    bottom: 12px;
+    font-size: 15px;
+    color: #999;
+}
+
+.textarea {
+	width:712px;
+	height:40px;
+}
+
+.view {
+	position: relative;
+	margin: 0 auto;
+	width:750px;
+	height:auto;
+	padding:15px;
+	border-top: 1px solid #ececec;
+}
+.viewTop {
+	margin-top: 4px;
+    margin-bottom: 11px;
+    position: relative;
+    witdh:840px;
+    height:55px;
+}
+.view>child:span {
+	font-size: 17px;
+    line-height: 22px;
+    width:826px;
+    height:auto;;
+	overflow: hidden;
+}
+.viewTop>div:nth-child(1) {
+	width:140px;
+	height:50px;
+}
+
+.viewTop>div:nth-child(2) {
+	width:50px;
+	height:50px;
+	
+}
+.wirter {
+	width:60px;
+	height:20px;
+    font-size: 14px;
+    font-weight: 550;
+}
+.date {
+	font-family: Helvetica, sans-serif;
+	font-size: 14px;
+	width:160px;
+	height:20px;
+	color : #999999;
+}
+
+.view >nth-child(2) > span {
+	margin-right: 5px;
+    letter-spacing: -.3px;
+    font-size: 50px;
+    line-height: 22px;
+}
+
+.reply-btn {
+	color: black;
+    background-color: #blue;
+    padding: 1px 12px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    display inline-block;
+	font-family: gothamL, notokrL, "Playfair Display";
+	margin-top: -2px;
+
+}
+
+.textarea {
+	width: 715px;
+    font-size: 16px;
+    height: 40px;
+    border: solid 2px #9db895;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 8px;
+}
+
+.modifyReply {
+	font-size: 10px;
+    border: 1px solid;
+    border-radius: 3px;
+    width: 35px;
+    height: 20px;
+}
+.content { width:700px; margin-top:15px;}
+
+#check-btn { display: none; }
+#check-btn:checked ~ .menubars { display: block; } 
+.menubars { display: none; }

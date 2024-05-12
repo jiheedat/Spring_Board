@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+
+.container {
+	background-color: none;
+}
+
+#join {
+	position:absolute;
+	margin-top:10px;
+	right:40px;
+}
+
+#Login {
+	width:100%;
+	margin-top:120px;
+	padding-top:20px;
+}
+
+#Login_2 { text-align: center;}
+
+#test {
+	margin-top:20px;
+	color:red;
+	font-size:15px;
+}

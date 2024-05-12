@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+.container{ background-color: none;}
+#catch_go { color:#F5481A;}
+#row_table { 
+	text-align: center;
+	border:1px solid grey;
+}
+
+#table_writer {
+	background-color: #9db895;
+	color: #eee;
+	text-align: center;
+}
+
+#height { height: 350px;}

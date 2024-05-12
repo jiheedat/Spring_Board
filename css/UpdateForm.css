@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+.container { background-color: none; }
+#catch_go { color:#F5481A;}
+
+#table {
+	text-align: center;
+	border:1px solid grey;
+}
+
+#revise { background-color: #9db895; color: #eee; ; text-align: center; }
+#update_form { height: 350px;}

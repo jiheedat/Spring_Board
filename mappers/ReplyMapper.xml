@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="replyMapper">
+	<select id="replyList" resultType="com.jh.dto.ReplyDto">
+		SELECT * FROM reply  WHERE bno=#{bno} ORDER BY rno DESC	
+	</select>
+	
+	<select id="replyCnt" resultType="java.lang.Integer">
+		SELECT count(*) FROM Reply WHERE bno=#{bno}
+	</select>
+	
+	<insert id="writeReply">
+		INSERT INTO reply(rno,bno,content,replyer)
+		VALUES(seq_reply.nextval,#{bno},#{content},#{replyer})
+	</insert>
+	
+	<update id="updateReply">
+		<![CDATA[
+			UPDATE reply SET content=#{content} WHERE rno=#{rno}
+		]]>
+	</update>
+	
+	<delete id="deleteReply">
+		DELETE FROM  reply WHERE rno=#{rno}	
+	</delete>
+	
+	<select id="detailReply" resultType="com.jh.dto.ReplyDto">
+		SELECT * FROM reply WHERE rno=#{rno}
+	</select>
+</mapper>

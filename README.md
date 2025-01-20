@@ -1,4 +1,4 @@
-# Spring_Board - 지원자 장용준 입니다.
+# Spring_Board - 지원자 김지희 입니다.
 
 
 안녕하세요 Spring5 + MyBatis 기반의 게시판 입니다.
